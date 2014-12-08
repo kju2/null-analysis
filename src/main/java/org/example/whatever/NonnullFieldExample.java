@@ -2,6 +2,11 @@ package org.example.whatever;
 
 import javax.annotation.Nullable;
 
+/**
+ * Explanation and code sample from "Flow analysis vs. syntactic analysis".
+ * 
+ * @see <a href="http://help.eclipse.org/luna/topic/org.eclipse.jdt.doc.user/tasks/task-using_null_annotations.htm#syntactic_analysis">Flow analysis vs. syntactic analysis</a>
+ */
 public class NonnullFieldExample {
 	
 	@Nullable
