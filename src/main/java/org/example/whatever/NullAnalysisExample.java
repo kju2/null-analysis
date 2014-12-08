@@ -7,7 +7,7 @@ public class NullAnalysisExample {
 			return;
 		}
 		
-		// ERROR: Null pointer access: The variable customer can only be null at this location.
+		// ERROR: Null pointer access: The variable o can only be null at this location.
 		o.toString();
 	}
 	
@@ -16,7 +16,7 @@ public class NullAnalysisExample {
 			o = null;
 		}
 		
-		// WARNING: Potential null pointer access: The variable o1 may be null at this location.
+		// WARNING: Potential null pointer access: The variable o may be null at this location.
 		o.toString();
 	}
 	
@@ -25,9 +25,9 @@ public class NullAnalysisExample {
 			return;
 		}
 		
-		// ERROR: Redundant null check: The variable article cannot be null at this location.
+		// ERROR: Redundant null check: The variable o cannot be null at this location.
 		if (o != null) {
-			// Show the article.
+			// Do something!
 		}
 	}
 }
