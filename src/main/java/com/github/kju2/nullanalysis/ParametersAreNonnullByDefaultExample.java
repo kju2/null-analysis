@@ -1,4 +1,4 @@
-package org.example.whatever;
+package com.github.kju2.nullanalysis;
 
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -6,11 +6,6 @@ import javax.annotation.ParametersAreNonnullByDefault;
 @ParametersAreNonnullByDefault
 public class ParametersAreNonnullByDefaultExample {
 
-	@ParametersAreNonnullByDefault
-	public void doNothingWithParameters(Object o, String s, Integer i) {
-		// Do nothing!
-	}
-	
 	public void nullPointerAccess(Object o) {
 		// ERROR: Redundant null check: The variable o is specified as @Nonnull.
 		if (o != null) {

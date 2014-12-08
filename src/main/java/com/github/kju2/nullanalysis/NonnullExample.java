@@ -1,4 +1,4 @@
-package org.example.whatever;
+package com.github.kju2.nullanalysis;
 
 import java.util.Collections;
 import java.util.Random;
